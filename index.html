@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoleRush - Step into Style</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-menu">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="SoleRush logo">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" alt="SoleRush logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="#categories" class="navbar-link" data-nav-link>Categories</a>
+              </li>
+
+              <li>
+                <a href="#featured" class="navbar-link" data-nav-link>Featured</a>
+              </li>
+
+              <li>
+                <a href="products.html" class="navbar-link" data-nav-link>Products</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="header-menu-actions">
+
+          <button class="header-menu-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>
+
+          <button class="header-menu-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>Profile</span>
+          </button>
+
+          <button class="header-menu-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+
+          <button class="header-menu-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- HERO SECTION -->
+
+      <section class="hero" id="home" style="background-image: url('assets/images/hero-bg.png');
+      background-size: cover; 
+      background-position: center;">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">Step Into Style Now</h2>
+
+            <p class="hero-text">
+              Every journey starts with a single step — make yours stylish, confident, and unforgettable from the ground
+              up.
+            </p>
+
+            <a href="products.html"><button class="btn">Explore Now</button></a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="Hero Banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- CATEGORIES SECTION -->
+
+      <div class="categories" id="categories">
+        <div class="categories-container">
+          <p class="section-subtitle">Categories</p>
+
+          <h2 class="h2 section-title">Explore by Categories</h2>
+          <div class="categories-row">
+            <div class="category-col">
+              <div class="category-img-container">
+                <img src="assets/images/category-1.png" class="category-img" alt="Category 1">
+                <div class="category-overlay">
+                  <span>Explore</span>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+            <div class="category-col">
+              <div class="category-img-container">
+                <img src="assets/images/category-2.png" class="category-img" alt="Category 2">
+                <div class="category-overlay">
+                  <span>Explore</span>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+            <div class="category-col">
+              <div class="category-img-container">
+                <img src="assets/images/category-3.png" class="category-img" alt="Category 3">
+                <div class="category-overlay">
+                  <span>Explore</span>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED PRODUCTS SECTION -->
+
+      <section class="featured-products" id="featured">
+        <div class="container">
+
+          <p class="section-subtitle">Featured</p>
+          <h2 class="h2 section-title">Featured Products</h2>
+          <ul class="featured-list has-scrollbar">
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-1.png" alt="HRX cotton socks" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>AirFlex Pro Runner</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-2.png"
+                  alt="Flat Lace-Fastening Shoes" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>Velocity Sprint X</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$48.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-3.png" alt="Loafers Men (Gray)" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>Striker Edge Sport</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-4.png"
+                  alt="Lace-Fastening white Shoes" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>Skyline Zoomers</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$21.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-5.png" alt="HRX cotton socks" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>UrbanStep Sneakers</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+            <li class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/featured-6.png"
+                  alt="Flat Lace-Fastening Shoes" /></a>
+              <div class="product-description">
+                <a href="singleproduct.html">
+                  <h4>StreetNova Kicks</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$48.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- ALL PRODUCTS SECTION -->
+
+      <section class="products-section" id="products">
+        <div class="container">
+
+          <p class="section-subtitle">Products</p>
+
+          <h2 class="h2 section-title">Explore All Products</h2>
+          <div class="products-container">
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-1.png" alt="HRX cotton socks" /></a>
+              <div class="product-description">
+                <h4>AirFlex Pro Runner</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-2.png" alt="Flat Lace-Fastening Shoes" /></a>
+              <div class="product-description">
+                <h4>Velocity Sprint X</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$48.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-3.png" alt="Loafers Men (Gray)" /></a>
+              <div class="product-description">
+                <h4>Striker Edge Sport</h4>
+                <div class="rating">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-4.png"
+                  alt="Lace-Fastening white Shoes" /></a>
+              <div class="product-description">
+                <h4>Skyline Zoomers</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$21.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-5.png" alt="HRX cotton socks" /></a>
+              <div class="product-description">
+                <h4>UrbanStep Sneakers</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-6.png" alt="Flat Lace-Fastening Shoes" /></a>
+              <div class="product-description">
+                <h4>StreetNova Kicks</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$48.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-7.jpg" alt="Loafers Men (Gray)" /></a>
+              <div class="product-description">
+                <h4>CoreMotion Runner</h4>
+                <div class="rating">
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <a href="singleproduct.html"><img src="assets/images/product-8.jpg"
+                  alt="Lace-Fastening white Shoes" /></a>
+              <div class="product-description">
+                <h4>TrailBlaze Xtreme</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>$21.00</p>
+                <a href=""><button class="btn">Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-view">
+            <a href="products.html"><button class="btn">View All</button></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXCLUSIVE COLLECTION SECTION -->
+
+      <section class="collection" id="sports">
+        <div class="container">
+
+          <figure class="collection-banner">
+            <img src="./assets/images/sports-banner.png" alt="House interior">
+          </figure>
+
+          <div class="collection-content">
+
+            <p class="section-subtitle">Sports Shoes Collection</p>
+
+            <h2 class="h2 section-title">Unleash Your Power with Every Step.</h2>
+
+            <p class="callout">
+              Step into greatness with our Sports Shoes Collection, designed to enhance your performance and support you
+              every mile of the way. Whether you're running, training, or exploring new terrains, each pair combines
+              cutting-edge technology with unmatched comfort. Crafted with durable materials and a sleek design, our
+              shoes provide the perfect balance of flexibility, stability, and style. Elevate your game, push your
+              limits, and take your fitness journey to the next level.
+            </p>
+
+            <a href="#" class="btn">Shop Now</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- TESTIMONIALS SECTION -->
+
+      <section class="testimonial" id="testimonial">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">Customers Feedback</h2>
+
+          <ul class="testimonial-list">
+
+            <li>
+              <div class="testimonial-card">
+
+                <i class="fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <img src="assets/images/user.png">
+                <h3>Sean Parkar</h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="testimonial-card">
+
+                <i class="fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <img src="assets/images/user.png">
+                <h3>Mike Smith</h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="testimonial-card">
+
+                <i class="fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <img src="assets/images/user.png">
+                <h3>Mabel Joe</h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+
+      <section class="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+            <section class="newsletter-section">
+              <div class="newsletter-content">
+                <h2 class="newsletter-title">Subscribe to our Newsletter</h2>
+                <p class="newsletter-description">
+                  Stay updated with our latest news, products, and offers.
+                  Join our community today!
+                </p>
+                <form class="newsletter-form">
+                  <input type="email" class="newsletter-email" placeholder="Enter your email" required>
+                  <button type="submit" class="newsletter-btn btn">Subscribe</button>
+                </form>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
+          </a>
+
+          <p class="section-text">
+            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+0123-456789</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>contact@solerush.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="#">Rimsha Javed</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
